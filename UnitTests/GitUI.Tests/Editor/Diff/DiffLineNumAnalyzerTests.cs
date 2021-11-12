@@ -1,6 +1,4 @@
-﻿using System.Collections.Generic;
-using System.IO;
-using FluentAssertions;
+
 using GitUI.Editor.Diff;
 using NUnit.Framework;
 
@@ -14,7 +12,7 @@ namespace GitUITests.Editor.Diff
         private readonly string _sampleCombinedDiff;
         private DiffLineNumAnalyzer _lineNumAnalyzer;
 
-        public DiffLineNumAnalyzerTests()
+      ()
         {
             // File copied from https://github.com/libgit2/libgit2sharp/pull/1034/files
             _sampleDiff = File.ReadAllText(Path.Combine(TestDataDir, "Sample.diff"));
